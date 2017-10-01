@@ -32,15 +32,6 @@ public class BaseActivity extends AppCompatActivity {
     }
 
 
-    //    @Override
-//    public void onCreate(@Nullable Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        mProgress = new ProgressDialog(this);
-//        mProgress.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//        mProgress.setMessage(getString(R.string.loading));
-//        mProgress.setCancelable(false);
-//        mProgress.setCanceledOnTouchOutside(false);
-//    }
 
     public Activity getActivity() {
         return this;

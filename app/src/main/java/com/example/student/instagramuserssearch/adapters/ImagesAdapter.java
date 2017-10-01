@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import com.example.student.instagramuserssearch.R;
 import com.example.student.instagramuserssearch.beans.ThumbnailBean;
 import com.loopj.android.image.SmartImageView;
-import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -56,6 +55,10 @@ public class ImagesAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         onBindUserHolder((ImagesAdapter.ImagesHolder) holder, position);
+    }
+
+    public List<ThumbnailBean> getImages() {
+        return images;
     }
 
     private void onBindUserHolder(final ImagesHolder holder, int position) {
